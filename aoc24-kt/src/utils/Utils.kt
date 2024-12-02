@@ -18,3 +18,11 @@ fun readInputToString(fileName: String) = Path("src/$fileName.txt").readText()
  * The cleaner shorthand for printing output.
  */
 fun Any?.println() = println(this)
+
+/**
+ * Drop element at a specific index
+ * @return immutable list without the removed element
+ */
+fun <T> List<T>.dropAt(index: Int) = this.filterIndexed { i, _ ->
+    i != index
+}
