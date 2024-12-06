@@ -26,3 +26,11 @@ fun Any?.println() = println(this)
 fun <T> List<T>.dropAt(index: Int) = this.filterIndexed { i, _ ->
     i != index
 }
+
+/**
+ * Replaces a String's Char at a specific index.
+ * @return the String with the replaced Char.
+ */
+fun String.replaceCharAt(index: Int, replacement: Char): String {
+    return this.substring(0, index) + replacement + this.substring(index + 1)
+}
