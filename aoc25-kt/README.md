@@ -17,7 +17,15 @@ but in this case, we have the number of dial numbers.
 Based on given numeric ranges: 
 
 - **Part 1:** Identify all the numbers in the range that have a digit sequence repeated exactly twice (like 55 or 123123) and sum them;
-
 - **Part 2:** Identify all the numbers in the range that have any sequence that repeats two or more times (like 999 or 1010) and sum them.
 
 **→ Solution:** Brute force by testing every number inside each range.
+
+## [Day 03](./src/Day03.kt): _Lobby_
+
+Before powering the escalator, we need to evaluate each bank of batteries to determine the strongest joltage it can produce.
+
+- **Part 1:** Identify the two digits in each battery bank that form the largest possible two-digit number while preserving their left-to-right order;
+- **Part 2:** Choose exactly twelve digits per bank to create the largest possible 12-digit number, still respecting the original order.
+
+**→ Solution:** Transverse through each bank and check if the current battery has a larger joltage than the one saved. But everytime we swap a battery, we need to invalidate all the saved ones in front of it.
