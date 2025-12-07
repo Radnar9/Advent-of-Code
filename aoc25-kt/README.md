@@ -29,3 +29,12 @@ Before powering the escalator, we need to evaluate each bank of batteries to det
 - **Part 2:** Choose exactly twelve digits per bank to create the largest possible 12-digit number, still respecting the original order.
 
 **→ Solution:** Transverse through each bank and check if the current battery has a larger joltage than the one saved. But everytime we swap a battery, we need to invalidate all the saved ones in front of it.
+
+## [Day 04](./src/Day04.kt): _Printing Department_
+
+To progress deeper into the North Pole base, the Elves need help managing their massive rolls of paper so the forklifts can free up time.
+
+- **Part 1:** Determine which paper rolls can be reached by forklifts based on their surroundings. A roll is accessible only if fewer than four adjacent positions (out of eight) contain other rolls.
+- **Part 1:** Simulate repeated removals of accessible rolls. Each time rolls are removed, accessibility changes, potentially unlocking more removable rolls.
+
+**→ Solution:** Iterate through each line of the input and check every possible direction.
