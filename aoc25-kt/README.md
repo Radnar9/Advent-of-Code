@@ -38,3 +38,12 @@ To progress deeper into the North Pole base, the Elves need help managing their 
 - **Part 1:** Simulate repeated removals of accessible rolls. Each time rolls are removed, accessibility changes, potentially unlocking more removable rolls.
 
 **→ Solution:** Iterate through each line of the input and check every possible direction.
+
+## [Day 05](./src/Day05.kt): _Cafeteria_
+
+The kitchen’s new inventory system has left the Elves unsure which ingredients are usable. To help them sort fresh items from spoiled ones, we must interpret their list of ID ranges.
+
+- **Part 1:** Identify which available ingredient IDs fall within any of the listed fresh ID ranges. Because ranges may overlap, each ID must be checked against all intervals to determine whether it qualifies as fresh.
+- **Part 2:** Ignore the list of available IDs and calculate every possible ID covered by the combined fresh ranges. The challenge lies in merging overlapping intervals and counting all unique IDs included within them.
+
+**→ Solution:** Sort ranges and merge overlapping ones.
