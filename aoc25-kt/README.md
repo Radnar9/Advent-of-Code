@@ -47,3 +47,13 @@ The kitchen’s new inventory system has left the Elves unsure which ingredients
 - **Part 2:** Ignore the list of available IDs and calculate every possible ID covered by the combined fresh ranges. The challenge lies in merging overlapping intervals and counting all unique IDs included within them.
 
 **→ Solution:** Sort ranges and merge overlapping ones.
+
+## [Day 06](./src/Day06.kt): _Trash Compactor_
+
+Stranded in a garbage smasher, you pass the time helping a young cephalopod with her unusual math worksheet.
+
+- **Part 1:** Extract each vertically aligned problem, ignoring internal spacing, and evaluate it left-to-right using the indicated operator.
+- **Part 2:** Reinterpret the worksheet by reading each problem right-to-left by column. This requires reconstructing numbers from top to bottom per column, identifying problem boundaries, and recalculating totals under this reversed reading rule.
+
+**→ Solution:** Read each digit until we find a full empty column, and then add the current total to the final total.
+
