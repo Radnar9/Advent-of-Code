@@ -57,3 +57,11 @@ Stranded in a garbage smasher, you pass the time helping a young cephalopod with
 
 **→ Solution:** Read each digit until we find a full empty column, and then add the current total to the final total.
 
+## [Day 07](./src/Day07.kt): _Laboratories_
+
+Exploring a teleportation lab, you encounter a faulty tachyon manifold that must be understood before repairs can begin. The system routes downward-moving beams through a grid filled with beam splitters.
+
+- **Part 1:** Simulate how tachyon beams travel through the manifold. Beams move straight down until they hit a splitter `^`, where they stop and generate new beams to the left and right. The challenge is accurately tracking all beams, handling overlaps, and counting every split event.
+- **Part 2:** Reinterpret the manifold using quantum rules. A single particle follows both paths at every splitter, creating branching timelines. The challenge is to count all distinct possible end states by modeling every branching path through the grid.
+
+**→ Solution:** _For the first part_, we need to keep track of the points we've already seen and store the beams we are currently following in a queue. _For the second part_, we need to use a `backtracking strategy` with a `cache` that stores the timelines we've already explored.
